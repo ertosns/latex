@@ -1,0 +1,4 @@
+\contentsline {chapter}{\numberline {1}body of .tex file}{iii}%
+\contentsline {section}{\numberline {1.1}latex simple body}{iii}%
+\contentsline {section}{\numberline {1.2}mathematical notations}{iii}%
+\contentsline {section}{\numberline {1.3}formating}{iv}%

@@ -1,0 +1,57 @@
+\documentclass[a4paper,12pt]{book}
+
+\usepackage{amsmath}
+\usepackage{index}
+\usepackage{braket}
+
+\makeindex
+
+\begin{document}
+\title{learn latex}
+\author{by ertosns}
+\date{10 november 2020}
+
+\maketitle
+\tableofcontents
+\pagenumbering{roman}
+
+\chapter{body of .tex file}
+
+\section{latex simple body}
+
+\begin{description}
+\item Preliminaries headers are \textbackslash documentclass[characteristics in a comma separated form]\{book\}. followed by packages in form \textbackslash usepackage\{package\_name\}.
+\item To generate indices with chapters names, and sections, documentclass, and usepackage are followed by \textbackslash makeindex, and it's available in package index.
+\item Document starts with code \textbackslash begin\{document\} and ends with \textbackslash end\{document\}, followed by title \textbackslash title\{title\}, author \textbackslash author\{author name\}, date \textbackslash date\{date\} ... title \textbackslash maketitle, table of contents \textbackslash tableofcontents, number pages is set with \textbackslash pagenumbering\{number type such as roman\}.
+\item First of all latex command is distinguished with backslash, commands are expressed in the form \textbackslash command\_name.
+\item The document is divided into chapters, and expressed as \textbackslash chapter\{chapter\_title\}.
+\item Inside every chapter there are descriptions \textbackslash begin \{description\}, and ends with \textbackslash end \{description\}, and has little identation under the section.
+\item Items are expressed as \textbackslash item.
+
+\item Sections are numerated subtitles under each chapter and coded as \textbackslash section\{section title\}.
+\end{description}
+
+\section{mathematical notations}
+
+\begin{description}
+\item mathematical representation is available in package amsmath.
+\item every mathematical formula is bounded by \$, or under equation begin-end.
+\item single line equation is coded under \textbackslash begin\{equation\} and ends with \textbackslash end\{equation\}.
+\item hat: $\hat{i}$ is coded as \textbackslash hat\{i\}
+\item ket-bra: quantum symbols ket and bra are represented by \textbackslash ket\{symbol\}, and \textbackslash bra\{symbol\}, for example ket $\ket{A}$, bra $\bra{B}$.
+\item ket-bra pair: exist in braket package, and coded as \textbackslash braket\{ket symbol, bra symbol\}, as follows: $\braket{a,b}$
+\item subscript: $symbol_{subscript\_name}$ is coded as symbol\_\{subscript\}.
+\item vector: $\vec{vector\_name}$ coded as \textbackslash vec\{vector name\}.
+\item division: $\frac{a}{b}$ coded as \textbackslash frac\{a\}\{b\}.
+\item nth-root: $\sqrt[nth]{4}$ coded as \textbackslash sqrt[nth]\{4\}.
+\item greek\_letters: $\alpha$ coded as \textbackslash alpha
+\item matrix: $\begin{vmatrix}1&0&0\\0&1&0\\0&0&1\end{vmatrix}$ is bounded by \textbackslash begin\{vmatrix\} elements \textbackslash end\{vmatrix\}, and elements are expressed as rows separated by double backslash, and each row is expressed as elements separated by ampersand as follows  1\&0\&0 \textbackslash \textbackslash 0\&1\&0 \textbackslash \textbackslash 0\&0\&1.
+\end{description}
+
+\section{formating}
+
+\begin{description}
+\item bold: \textbf{\emph{bold text is coded as follows:}} \textbackslash textbf\{\textbackslash emph\{text\}\}, or \textbackslash mathbf\{text\}.
+\end{description}
+
+\end{document}
